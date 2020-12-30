@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E mail adresiniz "></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sifreEditText"
+        android:inputType="textPassword"
+        android:hint="Şifreniz "></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:text="Giriş Yap"
+            android:textAllCaps="false"
+            android:onClick="girisYap"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:layout_width="0dp"
+            android:text="Kayıt Ol"
+            android:onClick="kayitOl"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/addimg"
+        android:onClick="selectImage"
+        ></ImageView>
+
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:hint="Açıklama Ekleyiniz"
+        android:inputType="textMultiLine"
+        android:maxLength="140"></EditText>
+
+    <Button
+        android:id="@+id/yukle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#cdb38b"
+        android:textColor="#fff"
+        android:onClick="yukle"
+        android:text="Yükle"
+        android:textAllCaps="false"></Button>
+
+</LinearLayout>
